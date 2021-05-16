@@ -6,9 +6,66 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Homework 12 countries</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   </head>
   <body>
     <main>
+
+      <div class="container">
+        <div class="row pt-5">
+          <div class="col-6">
+            <div class="form-group ">
+              <label for="exampleFormControlFile1">Country name:</label>
+              <input class="form-control form-control-lg js-input-search" type="text" placeholder="Enter country name">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-4">
+            <ul class="list-group js-country-list">
+              <li class="list-group-item">An item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+              <li class="list-group-item">A fourth item</li>
+              <li class="list-group-item">And a fifth one</li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <div class="card border-0">
+              <div class="row align-items-center">
+                <div class="col-md-7">
+                  <div class="card-body">
+                    <h5 class="card-title">Ukraine</h5>
+                    <ul class="list-group">
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                        population
+                        <span>42692393</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                        capital
+                        <span>Kiev</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                        languages
+                        <ul>
+                          <li>ukr</li>
+                          <li>russ</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <img src="https://restcountries.eu/data/ukr.svg" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- /.container -->
     </main>
   </body>
 </html>
