@@ -1,2 +1,18 @@
 @import './var';
 @import './common.css';
+
+.list-group-item {
+  cursor: pointer;
+}
+
+.list-group-item:hover {
+  background-color: #0dcaf0;
+}
+
+.card .list-group-item {
+  cursor: initial;
+}
+
+.card .list-group-item:hover {
+  background-color: #fff;
+}
