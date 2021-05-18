@@ -18,7 +18,7 @@ export const makeCountryMarkup = countries => {
 
   if (countries.length > 10) {
 
-    notify.success("Too many matches found. Please enter a more specific query!");
+    notify.error("Too many matches found. Please enter a more specific query!");
 
     clearCountryWrapper();
 
