@@ -1,14 +1,12 @@
 import '../styles/main.css';
-import '@pnotify/core/dist/PNotify.css';
-import '@pnotify/core/dist/BrightTheme.css';
 
-import * as PNotify from '@pnotify/core/dist/PNotify.js';
 import debounce from 'lodash.debounce'
 
 import fetchCountries from './api/fetchCountries'
+
+import { notify } from './notifications'
 import { makeCountryMarkup } from './makeCountryMarkup'
 import { REFS } from './constants'
-
 
 const clearCountryWrapper = () => {
   REFS.COUNTRY_WRAPPER.innerHTML = ''
@@ -19,11 +17,11 @@ const renderCountries = countryName => {
 }
 
 const onFetchCountryError = () => {
+
   clearCountryWrapper();
 
-  PNotify.error({
-    text: "Opps! Not found, try again"
-  });
+  notify.error("Opps! Not found, try again");
+
 }
 
 const onInputChange = e => {
@@ -33,9 +31,7 @@ const onInputChange = e => {
 
     e.target.value = ''
 
-    PNotify.error({
-      text: "Enter only text, please!"
-    });
+    notify.error("Enter only text, please!");
 
     return
   }
